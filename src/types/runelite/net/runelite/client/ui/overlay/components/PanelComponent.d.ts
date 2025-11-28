@@ -29,7 +29,7 @@ declare namespace net.runelite.client.ui.overlay.components {
 		render(graphics: java.awt.Graphics2D): java.awt.Dimension;
 		getBackgroundColor(): java.awt.Color;
 		getBounds(): Rectangle;
-		getChildren(): List<net.runelite.client.ui.overlay.components.LayoutableRenderableEntity>;
+		getChildren(): java.util.List<net.runelite.client.ui.overlay.components.LayoutableRenderableEntity>;
 		getPreferredSize(): java.awt.Dimension;
 		render(graphics: java.awt.Graphics2D): java.awt.Dimension;
 		setBackgroundColor(backgroundColor: java.awt.Color): void;

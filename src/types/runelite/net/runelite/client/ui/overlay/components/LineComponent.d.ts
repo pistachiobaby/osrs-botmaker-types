@@ -2,7 +2,7 @@
 /// <reference path="../../../../../java/index.d.ts" />
 declare namespace net.runelite.client.ui.overlay.components {
 	export class LineComponentBuilder {
-		constructor() : LineComponentBuilder;
+		constructor(): LineComponentBuilder;
 		bounds(bounds: Rectangle): LineComponentBuilder;
 		build(): LineComponent;
 		left(left: string): LineComponentBuilder;
@@ -24,10 +24,11 @@ declare namespace net.runelite.client.ui.overlay.components {
 		setLeft(left: string): void;
 		setLeftColor(leftColor: java.awt.Color): void;
 		setLeftFont(leftFont: any): void;
-		setPreferredLocation(preferredLocation: net.runelite.api.Point): void;
+		setPreferredLocation(point: java.awt.Point): void;
 		setPreferredSize(preferredSize: java.awt.Dimension): void;
 		setRight(right: string): void;
 		setRightColor(rightColor: java.awt.Color): void;
 		setRightFont(rightFont: any): void;
+		render(graphics: java.awt.Graphics2D): java.awt.Dimension;
 	}
 }
