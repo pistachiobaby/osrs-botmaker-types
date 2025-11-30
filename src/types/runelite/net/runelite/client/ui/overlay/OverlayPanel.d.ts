@@ -26,7 +26,7 @@
  */
 declare namespace net.runelite.client.ui.overlay {
 	abstract class OverlayPanel extends net.runelite.client.ui.overlay.Overlay {
-		protected panelComponent: net.runelite.client.ui.overlay.components.PanelComponent;
+		panelComponent: net.runelite.client.ui.overlay.components.PanelComponent;
 
 		/**
 		 * Gets the panel component.
